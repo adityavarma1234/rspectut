@@ -40,3 +40,6 @@ Temporary Items
 /log/*
 !/log/.keep
 /tmp
+
+#ignore idea file
+.idea/*
