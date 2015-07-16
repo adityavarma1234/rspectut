@@ -14,6 +14,6 @@ describe Zombie do
   
   it "is hungry" do
     zombie = Zombie.new
-      zombie.hungry?.should == true
+    zombie.should be_hungry
   end
 end
