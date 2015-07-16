@@ -3,6 +3,7 @@ class Zombie
   
   def initialize
     @name = 'Ash'
+    @brains = 0
   end
   
   def hungry?
