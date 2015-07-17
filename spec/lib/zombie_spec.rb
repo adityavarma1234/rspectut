@@ -2,6 +2,12 @@ require "spec_helper"
 require "zombie"
 
 describe Zombie do
+  it "is invalid without a name" do
+    zombie = Zombie.new
+    #predicate matcher
+    zombie.should_not be_valid 
+  end
+  
   it "is named Ash" do
   zombie = Zombie.new
   zombie.name.should == 'Ash'
