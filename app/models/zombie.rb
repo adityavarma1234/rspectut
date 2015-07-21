@@ -6,4 +6,9 @@ class Zombie < ActiveRecord::Base
     weapon.slice(self, :head)
     self.status = "dead again"
   end
+  
+  def geolocate
+    loc = Zoogle.graveyard_locator(self.graveyard)
+    "#{loc[:latitude]}, #{loc[:longitude]}"
+  end
 end
